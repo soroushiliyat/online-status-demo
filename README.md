@@ -1,73 +1,40 @@
-# React + TypeScript + Vite
+# Online Status Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and reusable Custom Hook to detect whether the user is online or offline, built with React, Vite, and TypeScript.
 
-Currently, two official plugins are available:
+## 🚀 Purpose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project demonstrates my understanding of Custom Hooks in React and how to interact with browser APIs like `navigator.onLine` and `window.addEventListener`. It’s designed to be clean, minimal, and production-ready for junior-level frontend development.
 
-## React Compiler
+## 🧠 What It Shows
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✅ How to build a reusable Custom Hook (`useOnlineStatus`)
+- ✅ How to use `useEffect` and `useState` properly
+- ✅ How to listen to browser events (`online` / `offline`)
+- ✅ How to structure a Vite + TypeScript project professionally
+- ✅ How to write clean, readable, and maintainable code
 
-## Expanding the ESLint configuration
+## 📦 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- Browser APIs (`navigator`, `window`)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📁 Project Structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+src/ ├── hooks/ │   └── useOnlineStatus.ts      # Custom Hook logic ├── components/ │   └── StatusIndicator.tsx     # UI component using the hook └── App.tsx                     # Main app entry
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🖥️ Demo
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Coming soon on [Vercel](https://vercel.com) — will be added after deployment.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+📌 Why This Matters
+Custom Hooks are essential for writing clean and scalable React code. This project shows I understand how to:
+- Abstract logic into reusable hooks
+- Work with browser-level APIs
+- Build with modern tooling (Vite + TypeScript)
+- Structure code for real-world use
+📬 Contact
+If you're a recruiter or collaborator and want to see more, feel free to reach out via GitHub or email. I’m actively building my portfolio for international work.
