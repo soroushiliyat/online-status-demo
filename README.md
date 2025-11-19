@@ -2,6 +2,11 @@
 
 A simple and reusable Custom Hook to detect whether the user is online or offline, built with React, Vite, and TypeScript.
 
+##Live Demo:
+https://online-status-demo.vercel.app/
+
+
+
 ## 🚀 Purpose
 
 This project demonstrates my understanding of Custom Hooks in React and how to interact with browser APIs like `navigator.onLine` and `window.addEventListener`. It’s designed to be clean, minimal, and production-ready for junior-level frontend development.
